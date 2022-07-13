@@ -1,0 +1,17 @@
+---
+- name: install vim
+  become: true
+  hosts: localhost
+  tasks:
+    - name: install package
+      yum:
+        name: vim
+        state: installed
+    - name: install curl
+      yum:
+        name: curl
+        state: installed
+    - name: wget
+      yum:
+        name: wget
+        state: installed    

@@ -1,0 +1,8 @@
+---
+- name: copy /etc/passwd file to /tmp/copy_passwd
+  hosts: localhost
+  tasks:
+    - name:
+      copy:
+        src: /etc/passwd
+        dest: /tmp/test-ansible
