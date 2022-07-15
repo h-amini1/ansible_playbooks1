@@ -1,5 +1,5 @@
 ---
-- name: add lines to myfile
+- name: add lines to myfile - version 2
   hosts: localhost
   tasks:
     - name: add lines
