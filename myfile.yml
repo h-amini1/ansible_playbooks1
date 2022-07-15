@@ -1,15 +1,11 @@
 ---
-- name: add lines to myfile - version 2
+- name: add lines to myfile
   hosts: localhost
   tasks:
     - name: add lines
       blockinfile:
         path: /root/git_repositories/ansible_playbooks1/myfile.yml
         create: yes
-        block: |
+        block: |  # add two line
           this is line 1
-          this is line 2
-# BEGIN ANSIBLE MANAGED BLOCK
-this is line 1
-this is line 2
-# END ANSIBLE MANAGED BLOCK
+          this is line 2 
