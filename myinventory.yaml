@@ -1,8 +1,5 @@
----
 all:
-  hosts:
-    host1:
-      ansible_host: 167.172.254.74
-    host2: 
-      ansible_host: 157.245.10.240
-   
+    hosts: 
+      167.172.254.74
+    hosts:
+      157.245.10.240
